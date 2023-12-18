@@ -1,9 +1,8 @@
 @import 'global/normalize.css';
 @import 'global/utility.css';
 
-
 .header {
-  background-color: #1F2936;
+  background-color: #1f2936;
   height: 80px;
   position: sticky;
   top: 0;
@@ -79,7 +78,7 @@
 }
 
 .personal-page__block--yellow-background {
-  background-color: #FCFFE7;
+  background-color: #fcffe7;
 }
 
 .personal-page__list-title {
@@ -119,7 +118,7 @@
 }
 
 .interesting-articles__description {
-  color: #6B7280;
+  color: #6b7280;
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -143,7 +142,7 @@
 
 .article-preview__body {
   padding: 24px;
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -155,14 +154,14 @@
 }
 
 .article-preview__description {
-  color: #6B7280;
+  color: #6b7280;
   font-size: 16px;
   font-weight: 400;
   flex: 1;
 }
 
 .article-preview__footer {
-  color: #6B7280;
+  color: #6b7280;
   font-size: 14px;
   font-weight: 400;
   margin-top: 30px;
@@ -174,7 +173,7 @@
 }
 
 .footer {
-  background-color: #6A6A6A;
+  background-color: #6a6a6a;
   height: 108px;
   color: #ffffff;
   display: flex;
