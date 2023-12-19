@@ -1,0 +1,39 @@
+.personal-page__info {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.personal-page__grid {
+  display: grid;
+  grid-template-columns: 32% 1fr;
+  gap: 20px;
+}
+
+.personal-page__block {
+  border: 1px solid #000;
+  padding: 30px;
+  gap: 16px;
+}
+
+.personal-page__block--yellow-background {
+  background-color: #fcffe7;
+}
+
+.personal-page__list-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.personal-page__list {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 16px 0 0 8px;
+}
+
+.personal-page__main-title {
+  font-size: 23px;
+  font-weight: 700;
+  padding-bottom: 6px;
+}

@@ -1,0 +1,40 @@
+.article-preview {
+  border-radius: 8px;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.article-preview__body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-preview__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.article-preview__description {
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 400;
+  flex: 1;
+}
+
+.article-preview__footer {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.article-preview__image {
+  height: 192px;
+  width: 100%;
+  object-fit: cover;
+}
