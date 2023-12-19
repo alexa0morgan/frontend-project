@@ -36,4 +36,5 @@
 .article-preview__image {
   height: 192px;
   width: 100%;
+  object-fit: cover;
 }
