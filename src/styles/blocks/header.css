@@ -45,3 +45,25 @@
   height: 32px;
   aspect-ratio: 1;
 }
+
+.header__menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .header__menu-button {
+    display: inline-block;
+  }
+
+  .header__nav, .header__profile {
+    display: none;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    height: 40px;
+  }
+}
