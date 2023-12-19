@@ -23,14 +23,16 @@
   gap: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width <= 800px) {
   .interesting-articles__title {
     font-size: 24px;
     margin-bottom: 12px;
   }
+
   .interesting-articles__description {
     font-size: 16px;
   }
+
   .interesting-articles__grid {
     grid-template-columns: 1fr;
   }
