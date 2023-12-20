@@ -5,7 +5,6 @@
 .interesting-articles__title {
   text-align: center;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
   margin-bottom: 16px;
 }
@@ -14,7 +13,6 @@
   color: #6b7280;
   text-align: center;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   margin-bottom: 48px;
 }
@@ -23,4 +21,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+@media (width <= 800px) {
+  .interesting-articles__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .interesting-articles__description {
+    font-size: 16px;
+  }
+
+  .interesting-articles__grid {
+    grid-template-columns: 1fr;
+  }
 }

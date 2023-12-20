@@ -37,3 +37,18 @@
   font-weight: 700;
   padding-bottom: 6px;
 }
+
+@media (width <= 800px) {
+  .personal-page__info {
+    font-size: 24px;
+    margin-bottom: 37px;
+  }
+
+  .personal-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-page__main-title {
+    font-size: 20px;
+  }
+}

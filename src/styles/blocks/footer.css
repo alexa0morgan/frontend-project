@@ -8,3 +8,13 @@
   font-size: 11px;
   line-height: 20px;
 }
+
+.footer__unbreakable {
+  white-space: nowrap;
+}
+
+@media (width <= 800px) {
+  .footer {
+    padding: 33px 0;
+  }
+}
