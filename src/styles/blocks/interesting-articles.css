@@ -34,11 +34,10 @@
 }
 
 .interesting-articles__icon {
-  height: 40px;
-  color: black;
+  height: 24px;
 }
 
-.interesting-articles__icon--active {
+.interesting-articles__bnt--active {
   color: red;
 }
 
@@ -57,9 +56,5 @@
 
   .interesting-articles__icons {
     margin: 12px 0;
-  }
-
-  .interesting-articles__icon {
-    height: 30px;
   }
 }
