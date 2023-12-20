@@ -1,13 +1,11 @@
 const articles = document.querySelector('#articles');
 const listButton = document.querySelector('#button-list');
-const listIcon = listButton.querySelector('svg');
 const gridButton = document.querySelector('#button-grid');
-const gridIcon = gridButton.querySelector('svg');
 const articlePreviews = document.querySelectorAll('.article-preview');
 
 function setViewTypeList() {
-  listIcon.classList.add('interesting-articles__icon--active');
-  gridIcon.classList.remove('interesting-articles__icon--active');
+  listButton.classList.add('interesting-articles__bnt--active');
+  gridButton.classList.remove('interesting-articles__bnt--active');
   articles.classList.add('interesting-articles__container--list');
   for (const item of articlePreviews) {
     item.classList.add('article-preview--horizontal');
@@ -15,8 +13,8 @@ function setViewTypeList() {
 }
 
 function setViewTypeGrid() {
-  gridIcon.classList.add('interesting-articles__icon--active');
-  listIcon.classList.remove('interesting-articles__icon--active');
+  gridButton.classList.add('interesting-articles__bnt--active');
+  listButton.classList.remove('interesting-articles__bnt--active');
   articles.classList.remove('interesting-articles__container--list');
   for (const item of articlePreviews) {
     item.classList.remove('article-preview--horizontal');
