@@ -45,6 +45,7 @@
   .article-preview__image {
     width: 192px;
     height: 100%;
+
     @media (width <= 550px) {
       width: 120px;
     }
