@@ -38,7 +38,7 @@
   padding-bottom: 6px;
 }
 
-@media screen and (width <= 800px) {
+@media (width <= 800px) {
   .personal-page__info {
     font-size: 24px;
     margin-bottom: 37px;

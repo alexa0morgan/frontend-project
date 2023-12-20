@@ -6,7 +6,7 @@
   padding: 65px 0;
 }
 
-@media screen and (width <= 800px) {
+@media (width <= 800px) {
   .main-title {
     font-size: 30px;
     padding: 40px 0;

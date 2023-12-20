@@ -23,7 +23,7 @@
   gap: 20px;
 }
 
-@media screen and (width <= 800px) {
+@media (width <= 800px) {
   .interesting-articles__title {
     font-size: 24px;
     margin-bottom: 12px;
