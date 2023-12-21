@@ -32,11 +32,7 @@ gridButton.addEventListener('click', () => {
   localStorage.setItem('viewType', 'grid');
 });
 
-const observerConfig = {
-  childList: true,
-};
-
-const observer = new MutationObserver(() => {
+export function setCorrectViewType() {
   const viewType = localStorage.getItem('viewType');
 
   if (viewType === 'list') {
@@ -44,6 +40,4 @@ const observer = new MutationObserver(() => {
   } else {
     setViewTypeGrid();
   }
-});
-
-observer.observe(articles, observerConfig);
+}

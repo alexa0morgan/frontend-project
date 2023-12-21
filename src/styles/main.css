@@ -3,8 +3,8 @@
 @import 'blocks/header.css';
 @import 'blocks/main-title.css';
 @import 'blocks/personal-page.css';
+@import 'blocks/form.css';
 @import 'blocks/interesting-articles.css';
 @import 'blocks/article-preview.css';
 @import 'blocks/footer.css';
 @import 'blocks/text-block.css';
-@import 'blocks/form.css';

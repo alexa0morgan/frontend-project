@@ -12,7 +12,7 @@ export function createArticle(aName, image, description, dateString) {
   const imgElement = document.createElement('img');
   imgElement.classList.add('article-preview__image');
   imgElement.src = image;
-  imgElement.alt = 'Баннер статьи';
+  imgElement.alt = '';
 
   const bodyElement = document.createElement('div');
   bodyElement.classList.add('article-preview__body');
@@ -34,7 +34,7 @@ export function createArticle(aName, image, description, dateString) {
   timeElement.textContent = dateFormatter.format(date);
 
   const readTimeElement = document.createElement('span');
-  const randNumber = Math.floor(Math.random() * (100 - 1) + 1);
+  const randNumber = Math.floor(Math.random() * (40 - 1) + 1);
   readTimeElement.textContent = ' · ' + randNumber.toString() + ' min read';
 
   footerElement.appendChild(timeElement);

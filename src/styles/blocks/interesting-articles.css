@@ -47,7 +47,8 @@
   border: 1px solid black;
   background-color: #fcffe7;
   margin: 40px 0;
-  width: 33%;
+  max-width: 417px;
+  width: 100%;
 }
 
 .interesting-articles__article-preview,
@@ -56,11 +57,12 @@
 }
 
 .interesting-articles__form {
-  width: 66%;
+  max-width: 834px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.interesting-articles__form.interesting-articles__form--hidden {
+.interesting-articles__form--hidden {
   display: none;
 }
 
@@ -83,13 +85,5 @@
 
   .interesting-articles__icons {
     margin: 12px 0;
-  }
-
-  .interesting-articles__add-article {
-    width: 100%;
-  }
-
-  .interesting-articles__form {
-    width: 100%;
   }
 }

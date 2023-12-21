@@ -122,7 +122,7 @@
 
         <button id="add-article-button" class="interesting-articles__add-article">Добавить</button>
 
-        <div id="form" class="interesting-articles__form interesting-articles__form--hidden form">
+        <form id="form" class="interesting-articles__form interesting-articles__form--hidden form">
           <div class="form__input-container">
             <label for="article-name">Название статьи</label>
             <input id="article-name" class="form__input" />
@@ -136,10 +136,10 @@
             <textarea id="article-description" class="form__textarea" rows="4"></textarea>
           </div>
           <div class="form__buttons">
-            <button id="form-cancel-button" class="form__button">Отмена</button>
-            <button id="form-create-button" class="form__button form__button--yellow">Создать</button>
+            <button id="form-cancel-button" class="form__button" type="button">Отмена</button>
+            <button id="form-create-button" class="form__button form__button--yellow" type="button">Создать</button>
           </div>
-        </div>
+        </form>
       </section>
     </div>
 
