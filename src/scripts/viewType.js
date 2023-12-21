@@ -1,9 +1,9 @@
 const articles = document.querySelector('#articles');
 const listButton = document.querySelector('#button-list');
 const gridButton = document.querySelector('#button-grid');
-const articlePreviews = document.querySelectorAll('.article-preview');
 
 function setViewTypeList() {
+  const articlePreviews = document.querySelectorAll('.article-preview');
   listButton.classList.add('interesting-articles__bnt--active');
   gridButton.classList.remove('interesting-articles__bnt--active');
   articles.classList.add('interesting-articles__container--list');
@@ -13,6 +13,7 @@ function setViewTypeList() {
 }
 
 function setViewTypeGrid() {
+  const articlePreviews = document.querySelectorAll('.article-preview');
   gridButton.classList.add('interesting-articles__bnt--active');
   listButton.classList.remove('interesting-articles__bnt--active');
   articles.classList.remove('interesting-articles__container--list');
@@ -31,10 +32,18 @@ gridButton.addEventListener('click', () => {
   localStorage.setItem('viewType', 'grid');
 });
 
-const viewType = localStorage.getItem('viewType');
+const observerConfig = {
+  childList: true,
+};
 
-if (viewType === 'list') {
-  setViewTypeList();
-} else {
-  setViewTypeGrid();
-}
+const observer = new MutationObserver(() => {
+  const viewType = localStorage.getItem('viewType');
+
+  if (viewType === 'list') {
+    setViewTypeList();
+  } else {
+    setViewTypeGrid();
+  }
+});
+
+observer.observe(articles, observerConfig);
