@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-size: 18px;
+  padding-top: 40px;
+}
+
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__input {
+  height: 44px;
+  padding: 0 8px;
+  border: 1px solid black;
+}
+
+.form__textarea {
+  padding: 8px;
+  resize: vertical;
+  min-height: 40px;
+  border: 1px solid black;
+}
+
+.form__button {
+  border: 1px solid black;
+  line-height: 1;
+  padding: 13px;
+  width: 33%;
+}
+
+.form__button--yellow {
+  background-color: #fcffe7;
+}

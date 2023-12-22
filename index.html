@@ -118,56 +118,28 @@
         </div>
         <p class="interesting-articles__description">Описать, о чем эти статьи, кратко</p>
 
-        <div id="articles" class="interesting-articles__container">
-          <article class="interesting-articles__article-preview article-preview">
-            <img class="article-preview__image" src="/Image1.png" alt="Баннер статьи 1" />
+        <div id="articles" class="interesting-articles__container"></div>
 
-            <div class="article-preview__body">
-              <h3 class="article-preview__title">Boost your conversion rate</h3>
-              <p class="article-preview__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
-                atque fuga culpa, similique sequi cum eos quis dolorum.
-              </p>
-              <div class="article-preview__footer">
-                <time datetime="2020-03-16T15:37:24Z">Mar 16, 2020</time>
-                <span> · 6 min read</span>
-              </div>
-            </div>
-          </article>
+        <button id="add-article-button" class="interesting-articles__add-article">Добавить</button>
 
-          <article class="interesting-articles__article-preview article-preview">
-            <img class="article-preview__image" src="/Image2.png" alt="Баннер статьи 2" />
-
-            <div class="article-preview__body">
-              <h3 class="article-preview__title">How to use search engine optimization to drive sales</h3>
-              <p class="article-preview__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
-                atque fuga culpa, similique sequi cum eos quis dolorum.
-              </p>
-              <div class="article-preview__footer">
-                <time datetime="2020-03-10T15:37:24Z">Mar 10, 2020</time>
-                <span> · 4 min read</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="interesting-articles__article-preview article-preview">
-            <img class="article-preview__image" src="/Image3.png" alt="Баннер статьи 3" />
-
-            <div class="article-preview__body">
-              <h3 class="article-preview__title">Improve your customer experience</h3>
-              <p class="article-preview__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut
-                atque fuga culpa, similique sequi cum eos quis dolorum.
-              </p>
-
-              <div class="article-preview__footer">
-                <time datetime="2020-02-12T15:37:24Z">Feb 12, 2020</time>
-                <span> · 11 min read</span>
-              </div>
-            </div>
-          </article>
-        </div>
+        <form id="form" class="interesting-articles__form interesting-articles__form--hidden form">
+          <div class="form__input-container">
+            <label for="article-name">Название статьи</label>
+            <input id="article-name" class="form__input" />
+          </div>
+          <div class="form__input-container">
+            <label for="article-image">Ссылка на картинку</label>
+            <input id="article-image" class="form__input" />
+          </div>
+          <div class="form__input-container">
+            <label for="article-description">Описание</label>
+            <textarea id="article-description" class="form__textarea" rows="4"></textarea>
+          </div>
+          <div class="form__buttons">
+            <button id="form-cancel-button" class="form__button" type="button">Отмена</button>
+            <button id="form-create-button" class="form__button form__button--yellow" type="button">Создать</button>
+          </div>
+        </form>
       </section>
     </div>
 
